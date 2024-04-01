@@ -53,7 +53,12 @@ const multiply = (n1, n2) => {
 }
 
 
-//addition endpoint
+/*addition endpoint - handles the addition arithmatic.
+Checks input values are numbers - will throw an error if not numbers.
+Valid numbers are passed to the add funciton which will return the result.
+This is then passed back to the requester.
+if this failed the error message is returned.
+*/
 //test with - http://localhost:3040/add?n1=5&n2=10 - expected result 15
 app.get("/add", (req,res)=>{
     try{
@@ -77,7 +82,12 @@ app.get("/add", (req,res)=>{
       }
 });
 
-//subtraction endpoint
+/*subtraction endpoint - handles the arithmatic.
+Checks input values are numbers - will throw an error if not numbers.
+Valid numbers are passed to the add funciton which will return the result.
+This is then passed back to the requester.
+if this failed the error message is returned.
+*/
 //test with - http://localhost:3040/subtract?n1=10&n2=5 - expected result 5
 app.get("/subtract", (req,res)=>{
     try{
@@ -102,7 +112,12 @@ app.get("/subtract", (req,res)=>{
     }
 });
 
-//Division endpoint
+/*division endpoint - handles the arithmatic.
+Checks input values are numbers - will throw an error if not numbers.
+Valid numbers are passed to the add funciton which will return the result.
+This is then passed back to the requester.
+if this failed the error message is returned.
+*/
 //test with - http://localhost:3040/divide?n1=10&n2=2 - expected result 5
 app.get("/divide", (req,res)=>{
   try{
@@ -127,7 +142,12 @@ res.status(200).json({statuscocde:200, data: result });
   }
 });
 
-//Multiplication endpoint
+/*multiplicaiton endpoint - handles the arithmatic.
+Checks input values are numbers - will throw an error if not numbers.
+Valid numbers are passed to the add funciton which will return the result.
+This is then passed back to the requester.
+if this failed the error message is returned.
+*/
 //test with - http://localhost:3040/multiply?n1=5&n2=2 - expected result 10
 app.get("/multiply", (req,res)=>{
   try{

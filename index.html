@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <!-- Calculator form for user input -->
+    <form id="calculatorForm">
+        <!-- Input field for the first value -->
+        <input type="text" id="value1" placeholder="Enter value 1" required>
+        <!-- Input field for the second value -->
+        <input type="text" id="value2" placeholder="Enter value 2" required>
+        <!-- Dropdown menu for selecting the operation -->
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+        </select>
+        <!-- Button to submit the form and perform the calculation -->
+        <button type="submit">Calculate</button>
+    </form>
+
+    <!-- Container to display the result or error message -->
+    <div id="result"></div>
+
+    <!-- Script file containing the JavaScript code for calculator operations -->
+    <script src="calculatorOperation.js"></script>
+</body>
+</html>
